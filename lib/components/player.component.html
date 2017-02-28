@@ -1,0 +1,62 @@
+<video width="100%" poster="{{vp.options.poster || '/static/images/video-preview.jpg'}}">
+    <source src="{{vp.options.video || vp.options.stream}}" />
+</video>
+<div class="video-controls clearix">
+    <div class="video-btn-progress">
+        <div class="progress_box">
+            <span class="play_progress"></span>
+        </div>
+    </div>
+    <div class="player-btn player-btn-sm video-btn-play pull-left" title="Play">
+		<span class='cw-icon'></span>
+	</div>
+    <div class="player-btn player-btn-sm video-btn-refresh pull-left" title="Refresh"></div>
+    <div class="player-btn video-btn-user pull-left">
+        <a href="{{vp.options.link}}" ng-if="vp.options.login">
+            <img ng-src="/static/upload/{{vp.options.avatar}}" ng-if="vp.options.avatar" />
+            <span class="user-name">{{vp.options.login}}</span>
+        </a>
+    </div>
+    <div class="player-btn video-btn-views pull-left" title="Views" disabled>
+		<span class='cw-icon'></span>
+		<span class='cw-text'>{{vp.options.views}}</span>
+	</div>
+    <div class="player-btn player-btn-sm video-btn-fs pull-right" title="FullScreen">
+		<span class='cw-icon'></span>
+	</div>
+    <div class="player-btn player-btn-sm video-btn-hd pull-right disabled" title="HD">
+		<span class='cw-icon'></span>
+	</div>
+    <div class="player-btn player-btn-sm video-btn-share pull-right disabled" title="Share">
+		<span class='cw-icon'></span>
+	</div>
+    <div class="player-btn player-btn-sm video-btn-support pull-right disabled" title="Support">
+		<span class='cw-icon'></span>
+	</div>
+    <div class="player-btn video-btn-volume pull-right">
+        <div class="volume-range-block mute-icon" data-volume="0">
+            <div class="volume-range mute"></div>
+        </div>
+        <div class="volume-range-block" data-volume="0.15">
+            <span class="volume-range"></span>
+        </div>
+        <div class="volume-range-block" data-volume="0.30">
+            <span class="volume-range"></span>
+        </div>
+        <div class="volume-range-block" data-volume="0.40">
+            <span class="volume-range"></span>
+        </div>
+        <div class="volume-range-block" data-volume="0.55">
+            <span class="volume-range"></span>
+        </div>
+        <div class="volume-range-block" data-volume="0.68">
+            <span class="volume-range"></span>
+        </div>
+        <div class="volume-range-block" data-volume="0.85">
+            <span class="volume-range"></span>
+        </div>
+        <div class="volume-range-block" data-volume="1">
+            <span class="volume-range"></span>
+        </div>
+    </div>
+</div>

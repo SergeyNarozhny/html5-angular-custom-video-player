@@ -1,0 +1,9 @@
+{
+  "name": "html5-angular-custom-video-player",
+  "version": "0.0.1",
+  "description": "",
+  "dependencies": {
+    "hls": "latest",
+    "angular": ">1.5"
+  }
+}
